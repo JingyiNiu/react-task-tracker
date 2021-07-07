@@ -1,12 +1,15 @@
-import Header from "./components/header/header.component";
-import Footer from "./components/footer/footer.component";
+import Header from "./components/Header/Header.component";
+import Footer from "./components/Footer/Footer.component";
 
-import "./App.css"
+import TaskContainer from "./components/TaskContainer/TaskContainer.component";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Header />
+      <TaskContainer />
       <Footer />
     </div>
   );
