@@ -7,8 +7,8 @@ import "./TaskHeader.styles.css";
 const TaskHeader = ({ title }) => {
   return (
     <div className='task-header'>
-      <h1>{title}</h1>
-      <Button/>
+      <h2>{title}</h2>
+      <Button text='+' />
     </div>
   );
 };
