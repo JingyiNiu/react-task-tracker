@@ -6,7 +6,7 @@ import "./TaskContainer.styles.css";
 
 const TaskContainer = () => {
   return (
-    <div class='task-container'>
+    <div className='task-container'>
       <TaskHeader title={"Task Header"} />
     </div>
   );

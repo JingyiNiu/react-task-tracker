@@ -4,7 +4,7 @@ import "./Footer.styles.css";
 const Footer = () => {
   return (
     <footer>
-      <div class='container-fluid footer-container'>
+      <div className='container-fluid footer-container'>
         <div>Copyright &copy; Zoey</div>
       </div>
     </footer>
