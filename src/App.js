@@ -13,6 +13,13 @@ function App() {
     { id: 3, text: "pick up Tom", day: "Feb 1st at 8:00pm", reminder: true },
   ]);
 
+  // Add task
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newTask = { id, ...task };
+    setTasks([...tasks, newTask]);
+  };
+
   // Delete task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
@@ -22,7 +29,7 @@ function App() {
   const toggleReminder = (id) => {
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, reminder:!task.reminder } : task
+        task.id === id ? { ...task, reminder: !task.reminder } : task
       )
     );
   };
@@ -34,6 +41,7 @@ function App() {
         tasks={tasks}
         onDelete={deleteTask}
         onToggle={toggleReminder}
+        onAdd={addTask}
       />
       <Footer />
     </div>

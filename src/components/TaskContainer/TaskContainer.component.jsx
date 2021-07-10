@@ -6,13 +6,17 @@ import AddTask from "../AddTask/AddTask.component";
 
 import "./TaskContainer.styles.css";
 
-const TaskContainer = ({ tasks, onDelete, onToggle }) => {
+const TaskContainer = ({ tasks, onDelete, onToggle, onAdd }) => {
   return (
     <div className='task-container'>
       <TaskHeader title={"My Task"} />
-      <AddTask />
+      <AddTask onAdd={onAdd}/>
       {tasks.length > 0 ? (
-        <Tasks tasks={tasks} onDelete={onDelete} onToggle={onToggle} />
+        <Tasks
+          tasks={tasks}
+          onDelete={onDelete}
+          onToggle={onToggle}
+        />
       ) : (
         <div className='no-task'>No task</div>
       )}
