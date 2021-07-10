@@ -1,0 +1,13 @@
+.navbar {
+  min-height: 40px;
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  margin-right: 20px;
+}
