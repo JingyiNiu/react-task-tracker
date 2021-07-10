@@ -10,3 +10,6 @@ https://create-react-app.dev/docs/getting-started
 - Auto Close Tag   
 - Prettier - Code formatter   
 - Rainbow Brackets   
+
+## Screenshots
+<img src="https://github.com/JingyiNiu/react-task-tracker/blob/master/public/screenshots/index.png" width=600>
