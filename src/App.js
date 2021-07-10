@@ -7,6 +7,8 @@ import TaskContainer from "./components/TaskContainer/TaskContainer.component";
 import "./App.css";
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
+
   const [tasks, setTasks] = useState([
     { id: 1, text: "buy milk", day: "Feb 1st at 10:00am", reminder: false },
     { id: 2, text: "go doctor", day: "Feb 2nd at 2:30pm", reminder: true },
@@ -42,6 +44,8 @@ function App() {
         onDelete={deleteTask}
         onToggle={toggleReminder}
         onAdd={addTask}
+        showAddTask={showAddTask}
+        setShowAddTask={setShowAddTask}
       />
       <Footer />
     </div>
