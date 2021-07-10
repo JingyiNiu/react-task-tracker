@@ -2,21 +2,15 @@
   "tasks": [
     {
       "id": 1,
-      "text": "buy milk",
+      "text": " Buy milk",
       "day": "Feb 1st at 10:00am",
       "reminder": false
     },
     {
       "id": 2,
-      "text": "go doctor",
+      "text": "Go to doctor",
       "day": "Feb 2nd at 2:30pm",
       "reminder": true
-    },
-    {
-      "text": "fghdgh",
-      "day": "dfghdgfh",
-      "reminder": false,
-      "id": 3
     }
   ]
 }
