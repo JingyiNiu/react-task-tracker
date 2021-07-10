@@ -5,11 +5,11 @@ import Tasks from "../Tasks/Tasks.component";
 
 import "./TaskContainer.styles.css";
 
-const TaskContainer = () => {
+const TaskContainer = ({tasks}) => {
   return (
     <div className='task-container'>
       <TaskHeader title={"Task Header"} />
-      <Tasks/>
+      <Tasks tasks={tasks}/>
     </div>
   );
 };
