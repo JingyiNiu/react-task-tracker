@@ -14,10 +14,15 @@ function App() {
     { id: 3, text: "pick up Tom", day: "Feb 1st at 8:00pm", reminder: true },
   ]);
 
+  // Delete task
+  const deleteTask = (id) => {
+    console.log("deleted ", id)
+  }
+
   return (
     <div>
       <Header />
-      <TaskContainer tasks={tasks}/>
+      <TaskContainer tasks={tasks} onDelete={deleteTask}/>
       <Footer />
     </div>
   );

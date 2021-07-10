@@ -5,11 +5,11 @@ import Tasks from "../Tasks/Tasks.component";
 
 import "./TaskContainer.styles.css";
 
-const TaskContainer = ({tasks}) => {
+const TaskContainer = ({tasks, onDelete}) => {
   return (
     <div className='task-container'>
       <TaskHeader title={"Task Header"} />
-      <Tasks tasks={tasks}/>
+      <Tasks tasks={tasks} onDelete={onDelete}/>
     </div>
   );
 };
