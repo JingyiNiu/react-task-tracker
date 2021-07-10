@@ -4,9 +4,9 @@ import { FaTimes } from "react-icons/fa";
 
 import "./Task.styles.css";
 
-const Task = ({ task, onDelete,onToggle }) => {
+const Task = ({ task, onDelete, onToggle }) => {
   return (
-    <div className='task' onDoubleClick={()=>onToggle(task.id)}>
+    <div className='task' onDoubleClick={() => onToggle(task.id)}>
       <h3>
         {task.text}{" "}
         <FaTimes
