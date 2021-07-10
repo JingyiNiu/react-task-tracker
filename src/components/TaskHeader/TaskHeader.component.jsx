@@ -12,7 +12,7 @@ const TaskHeader = ({ title }) => {
   return (
     <div className='task-header'>
       <h2>{title}</h2>
-      <Button text='+' onClick={onClick} />
+      <Button text='+' onClick={onClick} color='salmon'/>
     </div>
   );
 };
