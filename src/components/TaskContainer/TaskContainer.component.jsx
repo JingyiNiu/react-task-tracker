@@ -9,7 +9,11 @@ const TaskContainer = ({tasks, onDelete}) => {
   return (
     <div className='task-container'>
       <TaskHeader title={"Task Header"} />
-      <Tasks tasks={tasks} onDelete={onDelete}/>
+      {tasks.length > 0 ?
+        <Tasks tasks={tasks} onDelete={onDelete}/>
+        :
+        <div className="no-task">No task</div>
+      }
     </div>
   );
 };
