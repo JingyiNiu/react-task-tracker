@@ -7,7 +7,6 @@ import TaskContainer from "./components/TaskContainer/TaskContainer.component";
 import "./App.css";
 
 function App() {
-
   const [tasks, setTasks] = useState([
     { id: 1, text: "buy milk", day: "Feb 1st at 10:00am", reminder: false },
     { id: 2, text: "go doctor", day: "Feb 2nd at 2:30pm", reminder: true },
@@ -16,13 +15,22 @@ function App() {
 
   // Delete task
   const deleteTask = (id) => {
-    setTasks(tasks.filter(task=>task.id !== id))
-  }
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
+  // Toggle reminder
+  const toggleReminder = (id) => {
+    console.log(id);
+  };
 
   return (
     <div>
       <Header />
-      <TaskContainer tasks={tasks} onDelete={deleteTask}/>
+      <TaskContainer
+        tasks={tasks}
+        onDelete={deleteTask}
+        onToggle={toggleReminder}
+      />
       <Footer />
     </div>
   );

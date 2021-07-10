@@ -5,15 +5,15 @@ import Tasks from "../Tasks/Tasks.component";
 
 import "./TaskContainer.styles.css";
 
-const TaskContainer = ({tasks, onDelete}) => {
+const TaskContainer = ({ tasks, onDelete, onToggle }) => {
   return (
     <div className='task-container'>
       <TaskHeader title={"Task Header"} />
-      {tasks.length > 0 ?
-        <Tasks tasks={tasks} onDelete={onDelete}/>
-        :
-        <div className="no-task">No task</div>
-      }
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} onDelete={onDelete} onToggle={onToggle} />
+      ) : (
+        <div className='no-task'>No task</div>
+      )}
     </div>
   );
 };
