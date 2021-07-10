@@ -4,11 +4,15 @@ import Button from "../Button/Button.component";
 
 import "./TaskHeader.styles.css";
 
-const TaskHeader = ({ title, onAdd }) => {
+const TaskHeader = ({ title, onAdd, showAdd }) => {
   return (
     <div className='task-header'>
       <h2>{title}</h2>
-      <Button text='+' onClick={onAdd} color='salmon'/>
+      <Button
+        text={showAdd ? "x" : " +"}
+        onClick={onAdd}
+        color={showAdd ? 'orange':'salmon'}
+      />
     </div>
   );
 };
